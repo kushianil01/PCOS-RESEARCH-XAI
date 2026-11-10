@@ -1,0 +1,13 @@
+feature_set,n_feat,model,auc,auc_sd,pr_auc,bal_acc
+NI_symptoms_cycle_lifestyle,9,LogReg,0.881,0.028,0.814,0.815
+NI_symptoms_cycle_lifestyle,9,RandForest,0.869,0.034,0.78,0.783
+NI_full_noninvasive,19,LogReg,0.877,0.028,0.81,0.814
+NI_full_noninvasive,19,RandForest,0.887,0.026,0.819,0.785
+NI_anthropometric_only,7,LogReg,0.655,0.046,0.508,0.555
+NI_anthropometric_only,7,RandForest,0.589,0.058,0.449,0.559
+Lab_hormones_only,10,LogReg,0.645,0.057,0.514,0.571
+Lab_hormones_only,10,RandForest,0.711,0.042,0.556,0.617
+Ultrasound_only,5,LogReg,0.895,0.025,0.839,0.81
+Ultrasound_only,5,RandForest,0.872,0.031,0.803,0.801
+All_features,41,LogReg,0.941,0.021,0.91,0.866
+All_features,41,RandForest,0.961,0.016,0.935,0.876

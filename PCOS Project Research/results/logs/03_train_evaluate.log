@@ -1,0 +1,18 @@
+features (10): ['age_years', 'bmi_derived', 'cycle_irregular', 'weight_gain', 'hair_growth', 'skin_darkening', 'hair_loss', 'pimples', 'fast_food', 'regular_exercise']
+train n=432 pos=141 | test n=109 pos=36
+rule baselines (TRAIN):
+                           rule  balanced_accuracy  sensitivity  specificity  precision
+            R1_irregular_cycle              0.682        0.532        0.832      0.605
+R2_irregular_and_androgen_sign              0.699        0.504        0.893      0.696
+   R3_irregular_or_hair_growth              0.752        0.766        0.739      0.587
+     R4_three_or_more_symptoms              0.809        0.738        0.880      0.748 
+-> selected rule: R4_three_or_more_symptoms
+logreg  best CV AUC=0.8760 sd=0.0393 params={'clf__C': 0.1}
+tree    best CV AUC=0.8228 sd=0.0361 params={'clf__max_depth': 4, 'clf__min_samples_leaf': 10}
+rf      best CV AUC=0.8798 sd=0.0312 params={'clf__max_depth': 5, 'clf__max_features': 'sqrt', 'clf__min_samples_leaf': 5}
+gbm     best CV AUC=0.8721 sd=0.0399 params={'clf__learning_rate': 0.1, 'clf__max_depth': 1, 'clf__n_estimators': 200}
+best family=rf; 1-SE(NB) cutoff AUC=0.8631; FINAL (simplest within cutoff)=logreg
+
+TEST (held-out), final model: {'auc': 0.895, 'pr_auc': 0.835, 'brier': 0.117, 'accuracy': np.float64(0.761), 'balanced_accuracy': np.float64(0.787), 'sensitivity': np.float64(0.861), 'specificity': np.float64(0.712), 'precision': np.float64(0.596), 'f1': np.float64(0.705), 'tp': 31, 'fp': 21, 'tn': 52, 'fn': 5, 'n': 109, 'threshold': 0.241, 'cv_auc_train': 0.876}
+95% CI: {'auc': [0.825, 0.957], 'pr_auc': [0.719, 0.938], 'brier': [0.085, 0.153], 'accuracy': [0.679, 0.844], 'balanced_accuracy': [0.711, 0.864], 'sensitivity': [0.743, 0.968], 'specificity': [0.608, 0.814], 'precision': [0.463, 0.731], 'f1': [0.592, 0.805]}
+done

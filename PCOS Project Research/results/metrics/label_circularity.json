@@ -1,0 +1,86 @@
+{
+  "rotterdam_proxy_n_criteria_vs_label": [
+    {
+      "n_crit": 0,
+      "0": 119,
+      "1": 5,
+      "pct_labelled_pcos": 0.04
+    },
+    {
+      "n_crit": 1,
+      "0": 204,
+      "1": 41,
+      "pct_labelled_pcos": 0.167
+    },
+    {
+      "n_crit": 2,
+      "0": 41,
+      "1": 85,
+      "pct_labelled_pcos": 0.675
+    },
+    {
+      "n_crit": 3,
+      "0": 0,
+      "1": 46,
+      "pct_labelled_pcos": 1.0
+    }
+  ],
+  "rotterdam_proxy_ge2_vs_label": {
+    "accuracy": 0.8391866913123844,
+    "sensitivity": 0.7401129943502824,
+    "specificity": 0.8873626373626373,
+    "precision": 0.7616279069767442,
+    "tp": 131,
+    "fp": 41,
+    "tn": 323,
+    "fn": 46
+  },
+  "proxy_auc_vs_label": {
+    "oligo+androgen (non-invasive proxy criteria only)": 0.755,
+    "pcom_only (ultrasound)": 0.756,
+    "oligo only": 0.691,
+    "any 2 of 3": 0.858
+  },
+  "score_vs_follicle_spearman": {
+    "train_oof": [
+      0.413,
+      3.3784538745087646e-19
+    ],
+    "test": [
+      0.348,
+      0.00020764743097092102
+    ]
+  },
+  "auc_within_follicle_strata (train OOF + test scores pooled)": [
+    {
+      "max_follicles": "<=5",
+      "n": 214,
+      "n_label_pos": 11,
+      "label_rate": 0.051,
+      "auc_nonInvasive_score": 0.818
+    },
+    {
+      "max_follicles": "6-8",
+      "n": 126,
+      "n_label_pos": 22,
+      "label_rate": 0.175,
+      "auc_nonInvasive_score": 0.896
+    },
+    {
+      "max_follicles": "9-11",
+      "n": 97,
+      "n_label_pos": 49,
+      "label_rate": 0.505,
+      "auc_nonInvasive_score": 0.96
+    },
+    {
+      "max_follicles": ">=12",
+      "n": 104,
+      "n_label_pos": 95,
+      "label_rate": 0.913,
+      "auc_nonInvasive_score": 0.854
+    }
+  ],
+  "test_auc_symptom_count_score": 0.87,
+  "test_auc_final_model": 0.895
+}

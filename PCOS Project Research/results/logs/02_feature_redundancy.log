@@ -1,0 +1,63 @@
+split: train=432 (pos 141), test=109 (pos 36)
+           feature_set  model  n_features  auc_mean  auc_sd  pr_auc_mean  brier_mean
+                   BMI logreg          10    0.8751  0.0393       0.8049      0.1233
+                   BMI     rf          10    0.8792  0.0326       0.8026      0.1257
+          HeightWeight logreg          11    0.8737  0.0396       0.8018      0.1242
+          HeightWeight     rf          11    0.8826  0.0289       0.8030      0.1263
+     Height+Weight+BMI logreg          12    0.8735  0.0398       0.8016      0.1242
+     Height+Weight+BMI     rf          12    0.8784  0.0314       0.7916      0.1294
+             BMI+Waist logreg          11    0.8745  0.0377       0.8038      0.1235
+             BMI+Waist     rf          11    0.8829  0.0320       0.8079      0.1254
+         BMI+Waist+Hip logreg          12    0.8741  0.0373       0.8026      0.1242
+         BMI+Waist+Hip     rf          12    0.8836  0.0328       0.8131      0.1250
+HeightWeight+Waist+Hip logreg          13    0.8732  0.0382       0.8009      0.1250
+HeightWeight+Waist+Hip     rf          13    0.8859  0.0309       0.8142      0.1258
+           feature_set  model  mean_auc_diff_vs_BMI  ci_low  ci_high
+          HeightWeight logreg               -0.0015 -0.0047   0.0017
+          HeightWeight     rf                0.0034 -0.0087   0.0155
+     Height+Weight+BMI logreg               -0.0016 -0.0051   0.0018
+     Height+Weight+BMI     rf               -0.0008 -0.0121   0.0105
+             BMI+Waist logreg               -0.0006 -0.0056   0.0043
+             BMI+Waist     rf                0.0036 -0.0062   0.0134
+         BMI+Waist+Hip logreg               -0.0010 -0.0074   0.0055
+         BMI+Waist+Hip     rf                0.0044 -0.0067   0.0155
+HeightWeight+Waist+Hip logreg               -0.0019 -0.0084   0.0046
+HeightWeight+Waist+Hip     rf                0.0067 -0.0103   0.0237
+{
+ "decision": "BMI",
+ "reason": "no larger set met the pre-declared improvement rule",
+ "features": [
+  "age_years",
+  "bmi_derived",
+  "cycle_irregular",
+  "weight_gain",
+  "hair_growth",
+  "skin_darkening",
+  "hair_loss",
+  "pimples",
+  "fast_food",
+  "regular_exercise"
+ ],
+ "vif_height_weight_bmi_waist_hip": {
+  "age_years": 1.022253499839547,
+  "height_cm": 37.27390738136452,
+  "weight_kg": 200.83134156359512,
+  "bmi_derived": 165.38330609957868,
+  "waist_inch": 4.595718378452572,
+  "hip_inch": 4.3596655404711555
+ },
+ "vif_height_weight_waist_hip": {
+  "age_years": 1.0217345470874062,
+  "height_cm": 1.2501723495012613,
+  "weight_kg": 2.190180971349617,
+  "waist_inch": 4.586879633045629,
+  "hip_inch": 4.359435782554594
+ },
+ "spearman_pairs": {
+  "height_cm~weight_kg": 0.41995378954723306,
+  "weight_kg~bmi_derived": 0.8820211299987067,
+  "bmi_derived~waist_inch": 0.6167790088175444,
+  "waist_inch~hip_inch": 0.8293363113162784,
+  "weight_kg~waist_inch": 0.6514029102060189
+ }
+}

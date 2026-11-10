@@ -1,0 +1,8 @@
+row_id,column,raw_value,new_value,action
+124,bhcg_2,1.99.,1.99,stripped trailing '.'
+306,amh,a,,unparseable -> NaN
+-1,cycle_irregular,2/4/5,0/1/1,"inferred coding (2=regular, 4 and 5=irregular); 1 row(s) with code 5"
+403,bmi_reported,25.0,26.037493991347535,FLAG only: reported BMI differs from weight/height by >0.5; derived BMI stored separately
+413,bmi_reported,23.2,23.80540166204986,FLAG only: reported BMI differs from weight/height by >0.5; derived BMI stored separately
+441,bmi_reported,20.3,21.874999999999996,FLAG only: reported BMI differs from weight/height by >0.5; derived BMI stored separately
+482,bmi_reported,30.8,30.177136596055515,FLAG only: reported BMI differs from weight/height by >0.5; derived BMI stored separately

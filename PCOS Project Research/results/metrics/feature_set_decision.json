@@ -1,0 +1,140 @@
+{
+  "decision": "BMI",
+  "reason": "no larger set met the pre-declared improvement rule",
+  "features": [
+    "age_years",
+    "bmi_derived",
+    "cycle_irregular",
+    "weight_gain",
+    "hair_growth",
+    "skin_darkening",
+    "hair_loss",
+    "pimples",
+    "fast_food",
+    "regular_exercise"
+  ],
+  "candidate_sets": {
+    "BMI": [
+      "age_years",
+      "bmi_derived",
+      "cycle_irregular",
+      "weight_gain",
+      "hair_growth",
+      "skin_darkening",
+      "hair_loss",
+      "pimples",
+      "fast_food",
+      "regular_exercise"
+    ],
+    "HeightWeight": [
+      "age_years",
+      "height_cm",
+      "weight_kg",
+      "cycle_irregular",
+      "weight_gain",
+      "hair_growth",
+      "skin_darkening",
+      "hair_loss",
+      "pimples",
+      "fast_food",
+      "regular_exercise"
+    ],
+    "Height+Weight+BMI": [
+      "age_years",
+      "height_cm",
+      "weight_kg",
+      "bmi_derived",
+      "cycle_irregular",
+      "weight_gain",
+      "hair_growth",
+      "skin_darkening",
+      "hair_loss",
+      "pimples",
+      "fast_food",
+      "regular_exercise"
+    ],
+    "BMI+Waist": [
+      "age_years",
+      "bmi_derived",
+      "waist_inch",
+      "cycle_irregular",
+      "weight_gain",
+      "hair_growth",
+      "skin_darkening",
+      "hair_loss",
+      "pimples",
+      "fast_food",
+      "regular_exercise"
+    ],
+    "BMI+Waist+Hip": [
+      "age_years",
+      "bmi_derived",
+      "waist_inch",
+      "hip_inch",
+      "cycle_irregular",
+      "weight_gain",
+      "hair_growth",
+      "skin_darkening",
+      "hair_loss",
+      "pimples",
+      "fast_food",
+      "regular_exercise"
+    ],
+    "HeightWeight+Waist+Hip": [
+      "age_years",
+      "height_cm",
+      "weight_kg",
+      "waist_inch",
+      "hip_inch",
+      "cycle_irregular",
+      "weight_gain",
+      "hair_growth",
+      "skin_darkening",
+      "hair_loss",
+      "pimples",
+      "fast_food",
+      "regular_exercise"
+    ]
+  },
+  "input_fields": [
+    "age_years",
+    "height_cm",
+    "weight_kg",
+    "cycle_irregular",
+    "weight_gain",
+    "hair_growth",
+    "skin_darkening",
+    "hair_loss",
+    "pimples",
+    "fast_food",
+    "regular_exercise"
+  ],
+  "vif_height_weight_bmi_waist_hip": {
+    "age_years": 1.022253499839547,
+    "height_cm": 37.27390738136452,
+    "weight_kg": 200.83134156359512,
+    "bmi_derived": 165.38330609957868,
+    "waist_inch": 4.595718378452572,
+    "hip_inch": 4.3596655404711555
+  },
+  "vif_height_weight_waist_hip": {
+    "age_years": 1.0217345470874062,
+    "height_cm": 1.2501723495012613,
+    "weight_kg": 2.190180971349617,
+    "waist_inch": 4.586879633045629,
+    "hip_inch": 4.359435782554594
+  },
+  "spearman_pairs": {
+    "height_cm~weight_kg": 0.41995378954723306,
+    "weight_kg~bmi_derived": 0.8820211299987067,
+    "bmi_derived~waist_inch": 0.6167790088175444,
+    "waist_inch~hip_inch": 0.8293363113162784,
+    "weight_kg~waist_inch": 0.6514029102060189
+  },
+  "rule": [
+    "Pre-declared decision rule (written before running): start from the smallest candidate set and move to a larger set only if",
+    "(a) mean repeated-CV AUC improves by >= 0.01 for BOTH logistic regression and random forest AND",
+    "(b) the Nadeau-Bengio corrected 95% CI of the paired fold-wise AUC difference excludes 0 for both models.",
+    "Models use fixed (untuned) hyper-parameters so the comparison isolates the feature set."
+  ]
+}

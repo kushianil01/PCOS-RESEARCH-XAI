@@ -1,0 +1,34 @@
+Row-order / ID leakage check: AUC of Patient File No. = 0.538
+Label rate by ID decile: [0.22, 0.22, 0.33, 0.44, 0.33, 0.37, 0.3, 0.33, 0.54, 0.19]
+Implausible values: pulse<40: 2 | SBP<70: 1 | DBP<40: 1 | cycle length==0: 1 | FSH>200: 1 | LH>200: 1 | VitD3>500: 2
+Cycle(R/I) coding vs label:
+ PCOS (Y/N)    0   1
+Cycle(R/I)         
+2           308  82
+4            56  94
+5             0   1
+Cycle length vs label:
+ Cycle length(days)  0   2   3   4    5   6   7   8   9   10  11  12
+PCOS (Y/N)                                                         
+0                    1  11  18  24  213  80   6   1   6   0   3   1
+1                    0  27  18  37   63  11  13   1   3   1   2   1
+
+=== 5x5 repeated stratified CV, untuned defaults (prevalence=0.327)
+                feature_set  n_feat      model   auc  auc_sd  pr_auc  bal_acc
+NI_symptoms_cycle_lifestyle       9     LogReg 0.881   0.028   0.814    0.815
+NI_symptoms_cycle_lifestyle       9 RandForest 0.869   0.034   0.780    0.783
+        NI_full_noninvasive      19     LogReg 0.877   0.028   0.810    0.814
+        NI_full_noninvasive      19 RandForest 0.887   0.026   0.819    0.785
+     NI_anthropometric_only       7     LogReg 0.655   0.046   0.508    0.555
+     NI_anthropometric_only       7 RandForest 0.589   0.058   0.449    0.559
+          Lab_hormones_only      10     LogReg 0.645   0.057   0.514    0.571
+          Lab_hormones_only      10 RandForest 0.711   0.042   0.556    0.617
+            Ultrasound_only       5     LogReg 0.895   0.025   0.839    0.810
+            Ultrasound_only       5 RandForest 0.872   0.031   0.803    0.801
+               All_features      41     LogReg 0.941   0.021   0.910    0.866
+               All_features      41 RandForest 0.961   0.016   0.935    0.876
+
+Non-invasive |r|>0.7 pairs: [('Weight (Kg)', 'BMI', np.float64(0.9)), ('Waist(inch)', 'Hip(inch)', np.float64(0.87))]
+
+infertility csv: id range 10001 10541 | label rate 0.327 | shape (541, 6)
+overlap of IDs with main: 0

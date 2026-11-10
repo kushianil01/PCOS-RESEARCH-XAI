@@ -1,0 +1,20 @@
+row_id,column,value,flag
+224,pulse_bpm,18.0,pulse < 40 bpm (excluded from model by design)
+297,pulse_bpm,13.0,pulse < 40 bpm (excluded from model by design)
+162,bp_sys,12.0,systolic BP < 70 (likely entry error; excluded by design)
+201,bp_dia,8.0,diastolic BP < 40 (likely entry error; excluded by design)
+40,cycle_length_days,0.0,cycle length 0 days
+330,fsh,5052.0,FSH > 200 mIU/mL (implausible/unit error?)
+456,lh,2018.0,LH > 200 mIU/mL (implausible/unit error?)
+192,vit_d3,6014.66,Vit D3 > 500 ng/mL (implausible)
+196,vit_d3,5418.6,Vit D3 > 500 ng/mL (implausible)
+43,bmi_derived,13.387967057487119,derived BMI outside 14-50
+222,bmi_derived,12.417881749719594,derived BMI outside 14-50
+256,bmi_derived,13.493000505987519,derived BMI outside 14-50
+266,bmi_derived,13.850415512465373,derived BMI outside 14-50
+43,weight_kg,33.0,weight outside 35-150 kg
+222,weight_kg,31.0,weight outside 35-150 kg
+256,weight_kg,32.0,weight outside 35-150 kg
+259,weight_kg,33.0,weight outside 35-150 kg
+261,weight_kg,34.0,weight outside 35-150 kg
+266,weight_kg,32.0,weight outside 35-150 kg

@@ -1,0 +1,123 @@
+{
+  "raw_zip_sha256": "380ce7ff504cb8aa89349a251c64841a09aadbfe410627df94e6a62e67a23891",
+  "n_rows": 541,
+  "n_columns_processed": 45,
+  "n_positive": 177,
+  "n_negative": 364,
+  "prevalence": 0.3272,
+  "duplicate_rows_excluding_id": 0,
+  "missing_cells_nonempty_columns": {
+    "marriage_years": 1,
+    "amh": 1,
+    "fast_food": 1
+  },
+  "n_cleaning_actions": 7,
+  "n_quality_flags": 19,
+  "flags_by_column": {
+    "bmi_derived": 4,
+    "bp_dia": 1,
+    "bp_sys": 1,
+    "cycle_length_days": 1,
+    "fsh": 1,
+    "lh": 1,
+    "pulse_bpm": 2,
+    "vit_d3": 2,
+    "weight_kg": 6
+  },
+  "cycle_code_raw_counts": {
+    "2": 390,
+    "4": 150,
+    "5": 1
+  },
+  "primary_feature_summary": {
+    "age_years": {
+      "min": 20.0,
+      "50%": 31.0,
+      "max": 48.0
+    },
+    "height_cm": {
+      "min": 137.0,
+      "50%": 156.0,
+      "max": 180.0
+    },
+    "weight_kg": {
+      "min": 31.0,
+      "50%": 59.0,
+      "max": 108.0
+    },
+    "cycle_irregular": {
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "weight_gain": {
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "hair_growth": {
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "skin_darkening": {
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "hair_loss": {
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "pimples": {
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "fast_food": {
+      "min": 0.0,
+      "50%": 1.0,
+      "max": 1.0
+    },
+    "regular_exercise": {
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    }
+  },
+  "prevalence_by_primary_binary": {
+    "cycle_irregular": {
+      "0": 0.21,
+      "1": 0.629
+    },
+    "weight_gain": {
+      "0": 0.166,
+      "1": 0.593
+    },
+    "hair_growth": {
+      "0": 0.193,
+      "1": 0.682
+    },
+    "skin_darkening": {
+      "0": 0.179,
+      "1": 0.663
+    },
+    "hair_loss": {
+      "0": 0.253,
+      "1": 0.416
+    },
+    "pimples": {
+      "0": 0.196,
+      "1": 0.464
+    },
+    "fast_food": {
+      "0.0": 0.145,
+      "1.0": 0.5
+    },
+    "regular_exercise": {
+      "0": 0.31,
+      "1": 0.381
+    }
+  }
+}

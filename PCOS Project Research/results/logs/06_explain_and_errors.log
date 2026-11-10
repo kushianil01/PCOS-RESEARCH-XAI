@@ -1,0 +1,45 @@
+                       unit  log_odds  odds_ratio  or_ci_low  or_ci_high  sign_stability  top1_rank_freq  std_effect
+age_years          per year   -0.0607      0.9411     0.9049      0.9724           0.999           0.000     -0.3293
+bmi_derived       per kg/m2    0.0183      1.0184     0.9744      1.0726           0.774           0.000      0.0747
+cycle_irregular   Yes vs No    0.7578      2.1336     1.5920      2.7972           1.000           0.118      0.7578
+weight_gain       Yes vs No    0.7703      2.1604     1.6600      2.8790           1.000           0.152      0.7703
+hair_growth       Yes vs No    0.8656      2.3764     1.8243      3.1183           1.000           0.337      0.8656
+skin_darkening    Yes vs No    0.8765      2.4024     1.8285      3.1577           1.000           0.382      0.8765
+hair_loss         Yes vs No    0.0934      1.0979     0.8616      1.4037           0.777           0.000      0.0934
+pimples           Yes vs No    0.4885      1.6298     1.2466      2.0942           0.999           0.002      0.4885
+fast_food         Yes vs No    0.5300      1.6990     1.3056      2.2496           1.000           0.009      0.5300
+regular_exercise  Yes vs No    0.1732      1.1892     0.9139      1.5458           0.897           0.000      0.1732
+                  perm_auc_drop_test  perm_test_sd  perm_auc_drop_cv_train  perm_cv_sd  mean_abs_shap_test  mean_abs_shap_train  share_of_total_shap_test
+weight_gain                   0.0101        0.0142                  0.0243      0.0106              0.3742               0.3544                    0.1606
+skin_darkening                0.0341        0.0159                  0.0321      0.0110              0.3718               0.3735                    0.1596
+hair_growth                   0.0250        0.0145                  0.0306      0.0088              0.3501               0.3400                    0.1503
+cycle_irregular               0.0342        0.0107                  0.0208      0.0142              0.2975               0.3102                    0.1277
+fast_food                     0.0103        0.0089                  0.0098      0.0076              0.2649               0.2647                    0.1137
+age_years                     0.0085        0.0113                  0.0130      0.0122              0.2621               0.2674                    0.1125
+pimples                       0.0165        0.0093                  0.0070      0.0105              0.2441               0.2441                    0.1048
+regular_exercise              0.0030        0.0026                  0.0017      0.0033              0.0658               0.0637                    0.0282
+bmi_derived                  -0.0021        0.0024                 -0.0041      0.0066              0.0527               0.0578                    0.0226
+hair_loss                    -0.0032        0.0019                 -0.0009      0.0022              0.0461               0.0465                    0.0198
+ grouping     level   n  n_pos  label_rate  mean_score   auc  auc_ci_low  auc_ci_high  sensitivity  specificity
+age_group      <=24  50     26       0.520       0.480 0.966       0.917        1.000        0.962        0.542
+age_group     25-34 332    118       0.355       0.350 0.850       0.803        0.895        0.839        0.659
+age_group      >=35 159     33       0.208       0.231 0.887       0.813        0.949        0.788        0.794
+bmi_group       <25 314     83       0.264       0.257 0.848       0.792        0.899        0.747        0.788
+bmi_group   25-29.9 184     70       0.380       0.401 0.917       0.871        0.961        0.943        0.544
+bmi_group      >=30  43     24       0.558       0.521 0.888       0.756        0.971        0.917        0.526
+      src      test 109     36       0.330       0.332 0.895       0.827        0.955        0.861        0.712
+      src train_oof 432    141       0.326       0.326 0.875       0.839        0.907        0.844        0.694
+   source outcome   n  mean_age  mean_bmi  pct_irregular  mean_n_symptoms  mean_max_follicles_WITHHELD  mean_score
+     test      FN   5     32.60     23.27           0.40             0.60                        11.20        0.16
+     test      FP  21     29.62     25.24           0.24             2.43                         5.10        0.40
+     test correct  83     31.89     24.46           0.24             1.88                         8.29        0.33
+train_oof      FN  22     32.23     23.16           0.23             0.95                        13.00        0.16
+train_oof      FP  89     30.67     25.39           0.36             2.35                         5.22        0.41
+train_oof correct 321     31.57     24.02           0.27             1.83                         7.51        0.31
+                                 scenario  auc_mean  auc_sd  decision_flip_rate
+                                 baseline    0.8950  0.0000              0.0000
+                          BMI +-1.0 noise    0.8948  0.0009              0.0050
+                         age +-2 yr noise    0.8938  0.0041              0.0245
+            10% of binary answers flipped    0.8639  0.0217              0.1317
+all binary answers missing (mode-imputed)    0.6191  0.0000              0.4771
+done

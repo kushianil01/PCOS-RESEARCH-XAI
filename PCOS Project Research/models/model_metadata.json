@@ -1,0 +1,117 @@
+{
+  "model_family": "logreg",
+  "model_params": {
+    "clf__C": 0.1
+  },
+  "model_file": "pcos_primary_model.joblib",
+  "model_sha256": "52d278cf487f3d4f70406fd19948be97f77ec6e5462090e88ab25bc0d0794ce7",
+  "model_features": [
+    "age_years",
+    "bmi_derived",
+    "cycle_irregular",
+    "weight_gain",
+    "hair_growth",
+    "skin_darkening",
+    "hair_loss",
+    "pimples",
+    "fast_food",
+    "regular_exercise"
+  ],
+  "input_fields": [
+    "age_years",
+    "height_cm",
+    "weight_kg",
+    "cycle_irregular",
+    "weight_gain",
+    "hair_growth",
+    "skin_darkening",
+    "hair_loss",
+    "pimples",
+    "fast_food",
+    "regular_exercise"
+  ],
+  "threshold": 0.24125019746507323,
+  "threshold_rule": "highest threshold with >= 85% sensitivity on training out-of-fold predictions",
+  "training_ranges": {
+    "age_years": {
+      "min": 20.0,
+      "p01": 21.0,
+      "p99": 45.69,
+      "max": 48.0
+    },
+    "height_cm": {
+      "min": 137.0,
+      "p01": 143.0,
+      "p99": 172.69,
+      "max": 180.0
+    },
+    "weight_kg": {
+      "min": 31.0,
+      "p01": 34.31,
+      "p99": 89.0,
+      "max": 108.0
+    },
+    "bmi_derived": {
+      "min": 12.417881749719594,
+      "p01": 14.53791552463279,
+      "p99": 35.546358603584,
+      "max": 38.90071430875486
+    }
+  },
+  "oof_probability_bins": [
+    {
+      "p_low": 0.04,
+      "p_high": 0.1027,
+      "n": 87,
+      "observed_rate": 0.069
+    },
+    {
+      "p_low": 0.1031,
+      "p_high": 0.1751,
+      "n": 86,
+      "observed_rate": 0.0814
+    },
+    {
+      "p_low": 0.1768,
+      "p_high": 0.3153,
+      "n": 86,
+      "observed_rate": 0.1977
+    },
+    {
+      "p_low": 0.3171,
+      "p_high": 0.5881,
+      "n": 86,
+      "observed_rate": 0.3953
+    },
+    {
+      "p_low": 0.5909,
+      "p_high": 0.9229,
+      "n": 87,
+      "observed_rate": 0.8851
+    }
+  ],
+  "split_sha256": "5df6ae16636e1e7c1cce2d654c12c436a824869a556de243832ef123778fd552",
+  "processed_data_sha256": "7d18405280955fbaddf3924051f859877ba4447e41f2cd4fd732f59e8b1792ce",
+  "seed": 42,
+  "versions": {
+    "python": "3.13.15",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "created": "2026-10-17T19:00:07",
+  "cycle_irregular_coding": "inferred (2=regular, 4/5=irregular); original codebook not available",
+  "transformed_train_means": {
+    "age_years": -2.1793266779679e-16,
+    "bmi_derived": -9.087381053413318e-16,
+    "cycle_irregular": 0.28703703703703703,
+    "weight_gain": 0.3587962962962963,
+    "hair_growth": 0.26851851851851855,
+    "skin_darkening": 0.30787037037037035,
+    "hair_loss": 0.4675925925925926,
+    "pimples": 0.49074074074074076,
+    "fast_food": 0.5185185185185185,
+    "regular_exercise": 0.24305555555555555
+  }
+}

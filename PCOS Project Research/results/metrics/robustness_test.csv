@@ -1,0 +1,6 @@
+scenario,auc_mean,auc_sd,decision_flip_rate
+baseline,0.895,0.0,0.0
+BMI +-1.0 noise,0.8948,0.0009,0.005
+age +-2 yr noise,0.8938,0.0041,0.0245
+10% of binary answers flipped,0.8639,0.0217,0.1317
+all binary answers missing (mode-imputed),0.6191,0.0,0.4771

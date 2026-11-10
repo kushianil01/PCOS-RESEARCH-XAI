@@ -1,0 +1,172 @@
+{
+  "grouped_permutation_auc_drop_test": {
+    "all_5_symptoms": {
+      "mean": 0.218968797564688,
+      "sd": 0.044568424315318766
+    },
+    "cycle_irregular": {
+      "mean": 0.03362823439878241,
+      "sd": 0.01101362789419849
+    },
+    "age+BMI": {
+      "mean": 0.004417808219178144,
+      "sd": 0.012179817272699957
+    },
+    "lifestyle": {
+      "mean": 0.014680365296803716,
+      "sd": 0.010559025458497346
+    },
+    "skin_darkening+weight_gain+hair_growth": {
+      "mean": 0.17268074581430748,
+      "sd": 0.03737924945020808
+    }
+  },
+  "top2_share_of_mean_abs_shap_test": 0.3202,
+  "rank_agreement_spearman": {
+    "perm_test_vs_shap_test": [
+      0.733,
+      0.0158
+    ],
+    "perm_cv_vs_shap_train": [
+      0.976,
+      0.0
+    ],
+    "shap_train_vs_shap_test": [
+      0.976,
+      0.0
+    ]
+  },
+  "binary_input_pairs_abs_phi_ge_0.3": [
+    [
+      "weight_gain",
+      "hair_growth",
+      0.3
+    ],
+    [
+      "weight_gain",
+      "skin_darkening",
+      0.35
+    ],
+    [
+      "weight_gain",
+      "fast_food",
+      0.37
+    ],
+    [
+      "hair_growth",
+      "skin_darkening",
+      0.37
+    ],
+    [
+      "skin_darkening",
+      "fast_food",
+      0.34
+    ]
+  ],
+  "paired_bootstrap_test_auc_diff": {
+    "logreg_minus_rf": {
+      "mean": 0.007236030070960387,
+      "ci95": [
+        -0.014835063009636815,
+        0.03150232919254658
+      ]
+    },
+    "logreg_minus_gbm": {
+      "mean": 0.007142923311535036,
+      "ci95": [
+        -0.008931902985074703,
+        0.02502500348885892
+      ]
+    },
+    "logreg_minus_symptom_count_score": {
+      "mean": 0.024858809207289764,
+      "ci95": [
+        -0.0034755505538638155,
+        0.05872672067228529
+      ]
+    }
+  },
+  "mean_abs_shap_by_bmi_group": {
+    "<25": {
+      "age_years": 0.265,
+      "bmi_derived": 0.049,
+      "cycle_irregular": 0.287,
+      "weight_gain": 0.314,
+      "hair_growth": 0.323,
+      "skin_darkening": 0.354,
+      "hair_loss": 0.046,
+      "pimples": 0.244,
+      "fast_food": 0.266,
+      "regular_exercise": 0.068
+    },
+    "25-29.9": {
+      "age_years": 0.252,
+      "bmi_derived": 0.049,
+      "cycle_irregular": 0.328,
+      "weight_gain": 0.418,
+      "hair_growth": 0.352,
+      "skin_darkening": 0.392,
+      "hair_loss": 0.047,
+      "pimples": 0.244,
+      "fast_food": 0.263,
+      "regular_exercise": 0.06
+    },
+    ">=30": {
+      "age_years": 0.336,
+      "bmi_derived": 0.15,
+      "cycle_irregular": 0.368,
+      "weight_gain": 0.428,
+      "hair_growth": 0.437,
+      "skin_darkening": 0.434,
+      "hair_loss": 0.047,
+      "pimples": 0.245,
+      "fast_food": 0.261,
+      "regular_exercise": 0.05
+    }
+  },
+  "mean_abs_shap_by_age_group": {
+    "<=24": {
+      "age_years": 0.531,
+      "bmi_derived": 0.052,
+      "cycle_irregular": 0.353,
+      "weight_gain": 0.372,
+      "hair_growth": 0.369,
+      "skin_darkening": 0.405,
+      "hair_loss": 0.047,
+      "pimples": 0.245,
+      "fast_food": 0.265,
+      "regular_exercise": 0.063
+    },
+    "25-34": {
+      "age_years": 0.162,
+      "bmi_derived": 0.057,
+      "cycle_irregular": 0.308,
+      "weight_gain": 0.356,
+      "hair_growth": 0.346,
+      "skin_darkening": 0.382,
+      "hair_loss": 0.047,
+      "pimples": 0.244,
+      "fast_food": 0.264,
+      "regular_exercise": 0.066
+    },
+    ">=35": {
+      "age_years": 0.401,
+      "bmi_derived": 0.059,
+      "cycle_irregular": 0.293,
+      "weight_gain": 0.358,
+      "hair_growth": 0.326,
+      "skin_darkening": 0.344,
+      "hair_loss": 0.046,
+      "pimples": 0.244,
+      "fast_food": 0.266,
+      "regular_exercise": 0.061
+    }
+  },
+  "error_follicle_profile": {
+    "fn_n": 27,
+    "fn_share_with_max_follicles_ge12": 0.7407407407407407,
+    "fp_n": 110,
+    "fp_share_with_max_follicles_ge12": 0.02727272727272727,
+    "note": "pooled train-OOF + test; follicle counts were never model inputs"
+  }
+}

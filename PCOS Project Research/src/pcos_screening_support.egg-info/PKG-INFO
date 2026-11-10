@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: pcos-screening-support
+Version: 0.1.0
+Summary: Reproducible, explainable, non-invasive PCOS label-concordance screening-support prototype (research use only)
+Requires-Python: >=3.11
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: openpyxl
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: shap
+Requires-Dist: statsmodels
+Requires-Dist: joblib
+Requires-Dist: pyyaml
+Requires-Dist: streamlit
+Requires-Dist: pytest

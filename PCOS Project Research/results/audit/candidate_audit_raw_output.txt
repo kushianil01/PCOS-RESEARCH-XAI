@@ -1,0 +1,193 @@
+=== Kerala: Instructions sheet
+                                0                                                                                                    1   2         3
+0   Instructions to be followed :                                                                                                  NaN NaN       NaN
+1                             NaN                                                                                                  NaN NaN       NaN
+2                               1      Kindly ensure that the datas are converted to the units mentioned in the sheet.(ie, feet to cm) NaN       NaN
+3                               2                                                      Please fill up the entire data set of a patient NaN       NaN
+4                               3                          Manipulated datas if any need to be highlighted using the following colour  NaN       NaN
+5                               4                                           For every Yes/No questions *** ,  Indicate Yes = 1 ; No= 0 NaN       NaN
+6                               5                                                                           Blood Group indications ** NaN   A+ = 11
+7                             NaN                                                                                                  NaN NaN   A- = 12
+8                             NaN                                                                                                  NaN NaN   B+ = 13
+9                             NaN                                                                                                  NaN NaN   B- = 14
+10                            NaN                                                                                                  NaN NaN   O+ =15 
+11                            NaN                                                                                                  NaN NaN   O- = 16
+12                            NaN                                                                                                  NaN NaN   AB+ =17
+13                            NaN                                                                                                  NaN NaN  AB- = 18
+14                              6                               Blood pressure should be entered as systolic and diastolic separately  NaN       NaN
+15                              7  Additional informations if any should be kept separately, should not mix it with the format shared. NaN       NaN
+16                              8                                Please ensure that no NaN ( Non Numeric values/ blank space) is made. NaN       NaN
+17                              9                                                                       RBS  means Random glucose test NaN       NaN
+18                             10           Beta-HCG cases are mentioned as Case I and II , repeat the previous one if only one exist. NaN       NaN
+19                             11                                   In case sparing a blank space kindly fill the cell with red colour NaN       NaN
+20                             12                          If the patient is PCOS Fill the cell with green colour for easier reference NaN       NaN
+
+=== shape (541, 45) | dup rows (excl id cols): 0 | dup patient ids: 0
+class balance: {0: 364, 1: 177}
+
+=== missing / non-numeric
+Marraige Status (Yrs)      1
+Fast food (Y/N)            1
+Unnamed: 44              539
+II    beta-HCG(mIU/mL) non-numeric entries: ['1.99.']
+AMH(ng/mL) non-numeric entries: ['a']
+
+=== describe (selected, check units/range)
+                              min         25%         50%         75%           max
+Sl. No                   1.000000  136.000000  271.000000  406.000000    541.000000
+Patient File No.         1.000000  136.000000  271.000000  406.000000    541.000000
+PCOS (Y/N)               0.000000    0.000000    0.000000    1.000000      1.000000
+Age (yrs)               20.000000   28.000000   31.000000   35.000000     48.000000
+Weight (Kg)             31.000000   52.000000   59.000000   65.000000    108.000000
+Height(Cm)             137.000000  152.000000  156.000000  160.000000    180.000000
+BMI                     12.417882   21.641274   24.238227   26.634958     38.900000
+Blood Group             11.000000   13.000000   14.000000   15.000000     18.000000
+Pulse rate(bpm)         13.000000   72.000000   72.000000   74.000000     82.000000
+RR (breaths/min)        16.000000   18.000000   18.000000   20.000000     28.000000
+Hb(g/dl)                 8.500000   10.500000   11.000000   11.700000     14.800000
+Cycle(R/I)               2.000000    2.000000    2.000000    4.000000      5.000000
+Cycle length(days)       0.000000    4.000000    5.000000    5.000000     12.000000
+Marraige Status (Yrs)    0.000000    4.000000    7.000000   10.000000     30.000000
+Pregnant(Y/N)            0.000000    0.000000    0.000000    1.000000      1.000000
+No. of aborptions        0.000000    0.000000    0.000000    0.000000      5.000000
+I   beta-HCG(mIU/mL)     1.300000    1.990000   20.000000  297.210000  32460.970000
+FSH(mIU/mL)              0.210000    3.300000    4.850000    6.410000   5052.000000
+LH(mIU/mL)               0.020000    1.020000    2.300000    3.680000   2018.000000
+FSH/LH                   0.002146    1.416244    2.169231    3.959184   1372.826087
+Hip(inch)               26.000000   36.000000   38.000000   40.000000     48.000000
+Waist(inch)             24.000000   32.000000   34.000000   36.000000     47.000000
+Waist:Hip Ratio          0.755556    0.857143    0.894737    0.928571      0.979167
+TSH (mIU/L)              0.040000    1.480000    2.260000    3.570000     65.000000
+PRL(ng/mL)               0.400000   14.520000   21.920000   29.890000    128.240000
+Vit D3 (ng/mL)           0.000000   20.800000   25.900000   34.500000   6014.660000
+PRG(ng/mL)               0.047000    0.250000    0.320000    0.450000     85.000000
+RBS(mg/dl)              60.000000   92.000000  100.000000  107.000000    350.000000
+Weight gain(Y/N)         0.000000    0.000000    0.000000    1.000000      1.000000
+hair growth(Y/N)         0.000000    0.000000    0.000000    1.000000      1.000000
+Skin darkening (Y/N)     0.000000    0.000000    0.000000    1.000000      1.000000
+Hair loss(Y/N)           0.000000    0.000000    0.000000    1.000000      1.000000
+Pimples(Y/N)             0.000000    0.000000    0.000000    1.000000      1.000000
+Fast food (Y/N)          0.000000    0.000000    1.000000    1.000000      1.000000
+Reg.Exercise(Y/N)        0.000000    0.000000    0.000000    0.000000      1.000000
+BP _Systolic (mmHg)     12.000000  110.000000  110.000000  120.000000    140.000000
+BP _Diastolic (mmHg)     8.000000   70.000000   80.000000   80.000000    100.000000
+Follicle No. (L)         0.000000    3.000000    5.000000    9.000000     22.000000
+Follicle No. (R)         0.000000    3.000000    6.000000   10.000000     20.000000
+Avg. F size (L) (mm)     0.000000   13.000000   15.000000   18.000000     24.000000
+Avg. F size (R) (mm)     0.000000   13.000000   16.000000   18.000000     24.000000
+Endometrium (mm)         0.000000    7.000000    8.500000    9.800000     18.000000
+
+Blood group codes: {15: 206, 13: 135, 11: 108, 17: 42, 16: 19, 14: 16, 12: 13, 18: 2}
+Cycle(R/I): {2: 390, 4: 150, 5: 1} | Cycle length: {0: 1, 2: 38, 3: 36, 4: 61, 5: 276, 6: 91, 7: 19, 8: 2, 9: 9, 10: 1, 11: 5, 12: 2}
+
+BMI recompute max abs diff: 1.5749999999999957 | rows diff>0.5: 4
+WHR recompute rows diff>0.02: 0
+rule max-follicle>=10: agreement with label 0.854
+rule max-follicle>=12: agreement with label 0.832
+rule max-follicle>=15: agreement with label 0.747
+PCOS (Y/N)    0   1
+row_0              
+(-1, 5]     203  11
+(5, 8]      104  22
+(8, 11]      48  49
+(11, 14]      7  53
+(14, 20]      2  38
+(20, 40]      0   4
+
+=== univariate AUC (orientation-free), sorted
+               feature   auc  n_missing
+      Follicle No. (R) 0.885          0
+      Follicle No. (L) 0.856          0
+  Skin darkening (Y/N) 0.734          0
+      Weight gain(Y/N) 0.728          0
+      hair growth(Y/N) 0.721          0
+       Fast food (Y/N) 0.701          1
+            Cycle(R/I) 0.692          0
+          Pimples(Y/N) 0.652          0
+            AMH(ng/mL) 0.646          1
+    Cycle length(days) 0.643          0
+                   BMI 0.621          0
+           Weight (Kg) 0.620          0
+             Age (yrs) 0.614          0
+           Waist(inch) 0.607          0
+             Hip(inch) 0.599          0
+        Hair loss(Y/N) 0.592          0
+ Marraige Status (Yrs) 0.578          1
+      Endometrium (mm) 0.575          0
+                FSH/LH 0.573          0
+           FSH(mIU/mL) 0.571          0
+       Pulse rate(bpm) 0.570          0
+  Avg. F size (L) (mm) 0.569          0
+  Avg. F size (R) (mm) 0.559          0
+              Hb(g/dl) 0.559          0
+  I   beta-HCG(mIU/mL) 0.547          0
+            Height(Cm) 0.537          0
+        Vit D3 (ng/mL) 0.532          0
+     Reg.Exercise(Y/N) 0.530          0
+      RR (breaths/min) 0.526          0
+            LH(mIU/mL) 0.525          0
+            RBS(mg/dl) 0.525          0
+            PRG(ng/mL) 0.523          0
+           Blood Group 0.522          0
+  BP _Diastolic (mmHg) 0.515          0
+     No. of aborptions 0.515          0
+         Pregnant(Y/N) 0.514          0
+            PRL(ng/mL) 0.514          0
+       Waist:Hip Ratio 0.512          0
+           TSH (mIU/L) 0.510          0
+II    beta-HCG(mIU/mL) 0.507          1
+   BP _Systolic (mmHg) 0.502          0
+
+infertility csv merge rows: 0 | label agrees: nan
+
+=== Figshare Elfadil
+(300, 8)
+   Age  FH  MC     LH   FSH  AMH    BMI  TT ng/dL
+0   23   2   2   5.00  7.00  6.8  25.91     184.0
+1   27   1   2   1.65  2.54  5.0  29.75     133.0
+2   25   2   1   6.50  4.00  7.6  21.97      26.0
+3   27   1   1   6.50  5.00  5.7  30.47     243.0
+4   26   1   2  15.60  3.50  4.8  31.60     301.6
+{'Age': 0, 'FH': 0, 'MC': 0, 'LH': 0, 'FSH': 0, 'AMH': 0, 'BMI': 0, 'TT ng/dL': 0}
+          count        mean         std    min     25%     50%      75%     max
+Age       300.0   29.143333    6.021932  17.00  25.000   29.00   33.000   45.00
+FH        300.0    1.410000    0.492655   1.00   1.000    1.00    2.000    2.00
+MC        300.0    1.523333    0.500290   1.00   1.000    2.00    2.000    2.00
+LH        300.0   10.356733    6.103313   0.13   5.800    8.90   13.500   32.30
+FSH       300.0    6.557133    2.925731   1.30   4.975    6.10    7.900   28.80
+AMH       300.0    7.192667    3.177673   3.10   5.100    6.20    7.725   20.10
+BMI       300.0   28.496000    4.608049  18.36  25.280   28.44   30.810   46.25
+TT ng/dL  300.0  216.229333  162.125099  10.00  70.000  184.00  390.000  580.00
+
+=== Zenodo catalog
+infoofdatasets Sheet1 (36, 7)
+  Dataset   Type Instances  Usages Availability  License  Year
+0     D36  image      1457       3          yes  Unknown  2019
+1      D5  image      4492       2          yes  Unknown  2021
+2     D11  image      1639       1          yes  Unknown  2022
+infoofdatasets Sheet2 (0, 0)
+Empty DataFrame
+Columns: []
+Index: []
+infoofdatasets Sheet3 (0, 0)
+Empty DataFrame
+Columns: []
+Index: []
+infooftools Sheet1 (45, 11)
+     Tools  Year           Publication Venue Technique Input Date Type  Accuracy Precision F1-Score Recall Availability Clinical Validation
+0   T4[62]  2021  Frontiers in public health       KNN           image    0.9700         -        -      -           No                  No
+1   T1[49]  2022                       ICEET    PCONet           image    0.9812      0.96     0.97   0.97           No                  No
+2  T20[51]  2022          Scientific Reports        SM           image    0.9989      0.99     0.99      1           No                  No
+infooftools Sheet2 (0, 0)
+Empty DataFrame
+Columns: []
+Index: []
+infooftools Sheet3 (0, 0)
+Empty DataFrame
+Columns: []
+Index: []
+
+=== UCI cervical
+(858, 36)
+{'Num of pregnancies': 0.07, 'Hormonal Contraceptives': 0.13, 'Hormonal Contraceptives (years)': 0.13, 'IUD': 0.14, 'IUD (years)': 0.14, 'STDs': 0.12, 'STDs (number)': 0.12, 'STDs:condylomatosis': 0.12, 'STDs:cervical condylomatosis': 0.12, 'STDs:vaginal condylomatosis': 0.12, 'STDs:vulvo-perineal condylomatosis': 0.12, 'STDs:syphilis': 0.12, 'STDs:pelvic inflammatory disease': 0.12, 'STDs:genital herpes': 0.12, 'STDs:molluscum contagiosum': 0.12, 'STDs:AIDS': 0.12, 'STDs:HIV': 0.12, 'STDs:Hepatitis B': 0.12, 'STDs:HPV': 0.12, 'STDs: Time since first diagnosis': 0.92, 'STDs: Time since last diagnosis': 0.92}
+{'Biopsy': 0.064, 'Hinselmann': 0.041, 'Schiller': 0.086, 'Citology': 0.051} dups: 23

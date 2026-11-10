@@ -1,0 +1,7 @@
+# Raw files, access date 2026-10-17 (unchanged originals; extracted copies sit in data/raw/*/extracted)
+380ce7ff504cb8aa89349a251c64841a09aadbfe410627df94e6a62e67a23891  kerala_kaggle/pcos.zip  (https://www.kaggle.com/datasets/prasoonkottarathil/polycystic-ovary-syndrome-pcos, CC BY-NC-SA 4.0)
+4de1f58a5615e97ae2472e48d1b1c689d265e061601f4bc66d9f387abf65f5d8  figshare_elfadil/PCOS_DATA.xlsx  (doi 10.6084/m9.figshare.17103995.v1, CC BY 4.0)
+47a56f275a51cd94c07a2d952356871261dad7c7b60397ded35b517a528e391c  zenodo_pcos_catalog/Taxonomy.xlsx  (doi 10.5281/zenodo.14575651, CC BY 4.0)
+145d0c5bed55ba294b4a75db3f7f2b6281ff7a8e0de1f23c879bda7da557a4f1  zenodo_pcos_catalog/infoofdatasets.xlsx
+3470f9fca1675359d5f112a30066a0fe7787e155031d792689090494fc742a32  zenodo_pcos_catalog/infooftools.xlsx
+d86f38fbb1f4c40c22c240127875d7a83a2f96238f7ed5a388e2277cfb79a742  uci_cervical/cervical.zip  (UCI id 383)

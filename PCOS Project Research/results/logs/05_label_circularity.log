@@ -1,0 +1,12 @@
+pcos      0   1  pct_labelled_pcos
+n_crit                            
+0       119   5              0.040
+1       204  41              0.167
+2        41  85              0.675
+3         0  46              1.000
+{'accuracy': np.float64(0.8391866913123844), 'sensitivity': np.float64(0.7401129943502824), 'specificity': np.float64(0.8873626373626373), 'precision': np.float64(0.7616279069767442), 'tp': 131, 'fp': 41, 'tn': 323, 'fn': 46} {'oligo+androgen (non-invasive proxy criteria only)': 0.755, 'pcom_only (ultrasound)': 0.756, 'oligo only': 0.691, 'any 2 of 3': 0.858}
+max_follicles   n  n_label_pos  label_rate  auc_nonInvasive_score
+          <=5 214           11       0.051                  0.818
+          6-8 126           22       0.175                  0.896
+         9-11  97           49       0.505                  0.960
+         >=12 104           95       0.913                  0.854

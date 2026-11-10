@@ -1,0 +1,7 @@
+source,outcome,n,mean_age,mean_bmi,pct_irregular,mean_n_symptoms,mean_max_follicles_WITHHELD,mean_score
+test,FN,5,32.6,23.27,0.4,0.6,11.2,0.16
+test,FP,21,29.62,25.24,0.24,2.43,5.1,0.4
+test,correct,83,31.89,24.46,0.24,1.88,8.29,0.33
+train_oof,FN,22,32.23,23.16,0.23,0.95,13.0,0.16
+train_oof,FP,89,30.67,25.39,0.36,2.35,5.22,0.41
+train_oof,correct,321,31.57,24.02,0.27,1.83,7.51,0.31

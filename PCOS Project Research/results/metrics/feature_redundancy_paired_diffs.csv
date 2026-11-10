@@ -1,0 +1,11 @@
+feature_set,model,mean_auc_diff_vs_BMI,ci_low,ci_high
+HeightWeight,logreg,-0.0015,-0.0047,0.0017
+HeightWeight,rf,0.0034,-0.0087,0.0155
+Height+Weight+BMI,logreg,-0.0016,-0.0051,0.0018
+Height+Weight+BMI,rf,-0.0008,-0.0121,0.0105
+BMI+Waist,logreg,-0.0006,-0.0056,0.0043
+BMI+Waist,rf,0.0036,-0.0062,0.0134
+BMI+Waist+Hip,logreg,-0.001,-0.0074,0.0055
+BMI+Waist+Hip,rf,0.0044,-0.0067,0.0155
+HeightWeight+Waist+Hip,logreg,-0.0019,-0.0084,0.0046
+HeightWeight+Waist+Hip,rf,0.0067,-0.0103,0.0237
